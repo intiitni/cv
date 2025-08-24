@@ -7,11 +7,7 @@
       "Migratie van factuurgegevens van DAVE naar Robaws (ERP).",
       "Implementatie van password manager en veilig wachtwoordbeleid.",
       "Beheer en onderhoud van webshop, prijslijstimport en data-entry (CSV/Excel).",
-      "Laptop-upgrades en installatie/configuratie van software.",
-      "Basis netwerkconfiguratie en VPN (OpenVPN, WireGuard), SSH/SFTP, Cloudflare Tunnels.",
-      "Virtualisatie & containers: Proxmox (Pi-hole VM), Docker Compose; Btrfs snapshots.",
-      "Backups & restore: Clonezilla, basis rsync.",
-      "CLI-vaardig (Bash); ervaring met Linux-serverinstallaties en Raspberry Pi."
+      "Verwerking en controleerde werkbonnen en opstellen facturen."
     ]
   }
 ]

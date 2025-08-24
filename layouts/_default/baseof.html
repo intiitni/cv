@@ -14,7 +14,8 @@
       <div class="hero">
         <div class="name">{{ .Site.Params.name }}</div>
         <div class="contact meta">
-          <div>{{ .Site.Params.location }}</div>
+          <div>{{ .Site.Params.birth }} • {{ .Site.Params.location }} 
+          </div>
           <div>
             <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
             {{ if not .Site.Params.hide_phone }} • <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a>{{ end }}

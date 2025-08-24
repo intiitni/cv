@@ -8,6 +8,7 @@ publishDir = "docs"
 [params]
   name = "Inti Gevers"
   location = "Diksmuide, België"
+  birth = "15/10/2006"
   email = "intigevers@gmail.com"
   phone = "+32 488 33 55 35"
   # Zet deze op true om telefoon te verbergen op de website
