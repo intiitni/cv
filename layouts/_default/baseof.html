@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ .Site.Title }}</title>
+  {{- $styles := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . | resources.Minify | resources.Fingerprint -}}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
+  <meta name="description" content="CV van {{ .Site.Params.name }}"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <div class="name">{{ .Site.Params.name }}</div>
+        <div class="contact meta">
+          <div>{{ .Site.Params.location }}</div>
+          <div>
+            <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+            {{ if not .Site.Params.hide_phone }} • <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a>{{ end }}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="footer">
+      Laatste build: {{ now.Format "02-01-2006 15:04" }} • Gemaakt met Hugo
+    </footer>
+  </div>
+</body>
+</html>

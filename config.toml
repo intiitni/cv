@@ -1,0 +1,19 @@
+baseURL = "https://intiitni.github.io/cv/"
+languageCode = "nl-be"
+title = "Inti Gevers — CV"
+theme = ""
+disableKinds = ["taxonomy", "term"]
+publishDir = "docs"
+
+[params]
+  name = "Inti Gevers"
+  location = "Diksmuide, België"
+  email = "intigevers@gmail.com"
+  phone = "+32 488 33 55 35"
+  # Zet deze op true om telefoon te verbergen op de website
+  hide_phone = false
+  # Kleuraccenten
+  primary = "#0f172a"   # slate-900
+  accent = "#2563eb"    # blue-600
+  light = "#f8fafc"     # slate-50
+  muted = "#64748b"     # slate-500

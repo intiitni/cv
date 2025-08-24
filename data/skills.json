@@ -1,0 +1,24 @@
+{
+  "technical": [
+    "Windows- en Linux-installatie (Arch Linux, Debian), dual-boot, UEFI/GPT",
+    "Hardware-upgrades: SSD, RAM, BIOS/UEFI updates",
+    "Basis netwerkbeheer (LAN, VPN, port forwarding)",
+    "Virtualisatie & containers: Proxmox, Docker Compose",
+    "Beveiliging: password managers (NordPass, Bitwarden, KeePass), VPN, SSH-keys",
+    "Backup & restore: Clonezilla, Btrfs snapshots"
+  ],
+  "soft": [
+    "Zelfstandig",
+    "Leergierig"
+  ],
+  "languages": [
+    "Nederlands: moedertaal",
+    "Engels: vergevorderd schriftelijk, basis mondeling",
+    "Frans: basiskennis"
+  ],
+  "hobbies": [
+    "Kajakken",
+    "Gaming",
+    "Muziek luisteren (vinyl)"
+  ]
+}

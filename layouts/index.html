@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<section class="card">
+  <h2>Profiel</h2>
+  {{ .Content }}
+</section>
+
+<section class="section-grid">
+  <div class="card">
+    <h2>Vaardigheden</h2>
+    <h3>Technisch</h3>
+    <ul>
+      {{ range .Site.Data.skills.technical }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+    <h3>Soft skills</h3>
+    <ul>
+      {{ range .Site.Data.skills.soft }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Talen</h2>
+    <ul>
+      {{ range .Site.Data.skills.languages }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+    <h2>Hobby’s</h2>
+    <ul>
+      {{ range .Site.Data.skills.hobbies }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Werkervaring</h2>
+  {{ range .Site.Data.experience }}
+    <h3>{{ .role }} — <span class="meta">{{ .company }} ({{ .period }})</span></h3>
+    <ul>
+      {{ range .bullets }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</section>
+
+<section class="card">
+  <h2>Opleiding</h2>
+  <ul>
+    {{ range .Site.Data.education }}
+      <li><strong>{{ .title }}</strong> — <span class="meta">{{ .place }}</span></li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}
