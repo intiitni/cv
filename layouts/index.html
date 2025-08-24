@@ -5,6 +5,15 @@
   {{ .Content }}
 </section>
 
+<section class="card">
+  <h2>Opleiding</h2>
+  <ul>
+    {{ range .Site.Data.education }}
+      <li><strong>{{ .title }}</strong> — <span class="meta">{{ .place }}</span></li>
+    {{ end }}
+  </ul>
+</section>
+
 <section class="section-grid">
   <div class="card">
     <h2>Vaardigheden</h2>
@@ -48,15 +57,6 @@
       {{ end }}
     </ul>
   {{ end }}
-</section>
-
-<section class="card">
-  <h2>Opleiding</h2>
-  <ul>
-    {{ range .Site.Data.education }}
-      <li><strong>{{ .title }}</strong> — <span class="meta">{{ .place }}</span></li>
-    {{ end }}
-  </ul>
 </section>
 
 {{ end }}
